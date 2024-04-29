@@ -1,0 +1,22 @@
+= Scripts to create, manage, and destroy temporary Azure OpenAI resources for use in local development
+
+== Maintainer
+
+* Mark Heckler
+* mailto:mark@thehecklers.com[mark@thehecklers.com]
+* mailto:mark.heckler@gmail.com[mark.heckler@gmail.com]
+* https://x.com/mkheck[@mkheck on X]
+
+== Purpose
+
+This repository contains three shell scripts that can be used to create and manage temporary Azure OpenAI resources for use in local development as follows:
+
+To create resources, update the environment variables in `aoaicreate.sh` and then run the script with 'source ./aoaicreate.sh'.
+
+To destroy resources, run './aoaidestroy.sh'.
+NOTE: Env vars from aoaicreate.sh are required for aoaidestroy.sh to work; otherwise, provide the required values as arguments.
+
+Useful assorted commands are contained within the file `aoaiutilities.sh`.
+NOTE: This file does not have exec permissions by default as it isn't so much a script as a collection of commands to be run in the shell. Currently. At this moment. It could change. You never know. 😁
+
+*_Star+watch this repo for updates!_*
