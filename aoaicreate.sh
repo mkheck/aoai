@@ -9,11 +9,11 @@ export AOAI_RESOURCE_GROUP="new_resource_group_name"
 export AOAI_LOCATION="eastus"
 export AOAI_ACCOUNT_NAME="new_cognitive_services_name"
 export AOAI_SKU="S0"
-# Example of model name: "gpt-35-turbo". Run model list command in aoaiutilities.sh to see available models.
+# Example of model name: "gpt-4o". Run model list command in aoaiutilities.sh to see available models.
 export AOAI_MODEL_NAME="chosen_model_name"
-# Example of model version: "0613". The model list command shows available models/versions.
+# Example of model version: "2024-05-13". The model list command shows available models/versions.
 export AOAI_MODEL_VERSION="chosen_model_version"
-# Example of deployment name: "gpt-35-turbo-0613"
+# Example of deployment name: "gpt-4o-2024-05-13"
 export AOAI_DEPLOYMENT_NAME=$AOAI_MODEL_NAME-$AOAI_MODEL_VERSION
 
 # Create a resource group
