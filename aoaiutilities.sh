@@ -14,6 +14,10 @@ az cognitiveservices account list-kinds
 # List all available models in the specified location
 az cognitiveservices model list -l $AOAI_LOCATION
 
+# List all available models in the specified location, then grep for the desired model, find versions available
+az cognitiveservices model list -l $AOAI_LOCATION | grep gpt-4o\" -A 10 | grep version
+
+
 # Show the deployment status
 az cognitiveservices account deployment show -g $AOAI_RESOURCE_GROUP -n $AOAI_ACCOUNT_NAME --deployment-name $AOAI_DEPLOYMENT_NAME
 
